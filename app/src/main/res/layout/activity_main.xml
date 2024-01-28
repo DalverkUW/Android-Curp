@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="#051517 "
+    android:foregroundTint="#46eafc "
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#02090a ">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imagen6"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/android5"
+                android:paddingLeft="50dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/Editname"
+                    style="@style/CampoTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Nombre(s)"
+                    android:inputType="textCapCharacters"
+                    android:textColor="#46eafc "
+                    android:textColorHighlight="#46eafc "
+                    android:textColorHint="#288590 "
+                    android:textColorLink="#46eafc "
+                    android:theme="@style/CampoTexto1"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/Editappat"
+                    style="@style/CampoTexto1"
+                    android:theme="@style/CampoTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Apellido Paterno"
+                    android:inputType="textCapCharacters"
+                    android:textColor="#46eafc "
+                    android:textColorHint="#288590 "
+                    android:textColorLink="#46eafc "
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/Editapmat"
+                    style="@style/CampoTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Apellido Materno"
+                    android:inputType="textCapCharacters"
+                    android:textColor="#46eafc "
+                    android:textColorHighlight="#46eafc "
+                    android:textColorHint="#288590 "
+                    android:textColorLink="#46eafc "
+                    android:theme="@style/CampoTexto1"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/EditCorreo"
+                    style="@style/CampoTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Correo Electrónico"
+                    android:inputType="textPersonName"
+                    android:textColor="#46eafc "
+                    android:textColorHint="#288590 "
+                    android:textColorLink="#46eafc "
+                    android:theme="@style/CampoTexto1"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/TextGener"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Género"
+                    android:textColor="#46eafc " />
+
+                <RadioGroup
+                    android:id="@+id/RadioGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/GenerMale"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hombre"
+                        android:textColor="#46eafc "
+                        android:theme="@style/CampoTexto1" />
+
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RadioButton
+                        android:id="@+id/GenerFem"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mujer"
+                        android:textColor="#46eafc "
+                        android:theme="@style/CampoTexto1" />
+                </RadioGroup>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TextDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de Nacimiento"
+                        android:textColor="#46eafc " />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textAnio"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Año"
+                            android:textAlignment="textEnd"
+                            android:textColor="#46eafc "
+                            android:textColorHighlight="#46eafc " />
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0" />
+
+                        <Spinner
+                            android:id="@+id/anio"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="#46eafc "
+                            android:backgroundTint="#46eafc "
+                            android:entries="@array/años"
+                            android:foregroundTint="#46eafc "
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textmes"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Mes"
+                            android:textAlignment="textEnd"
+                            android:textColor="#46eafc "
+                            android:textColorHighlight="#46eafc "
+                            android:textColorHint="#46eafc " />
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0" />
+
+                        <Spinner
+                            android:id="@+id/mes"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="#46eafc "
+                            android:backgroundTint="#46eafc "
+                            android:entries="@array/meses"
+                            android:foregroundTint="#46eafc "
+                            android:textAlignment="center" />
+
+
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textdia"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Dia"
+                            android:textAlignment="textEnd"
+                            android:textColor="#46eafc "
+                            android:textColorHighlight="#46eafc " />
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0" />
+
+                        <Spinner
+                            android:id="@+id/dia"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="#46eafc "
+                            android:backgroundTint="#46eafc "
+                            android:entries="@array/dias"
+                            android:foregroundTint="#46eafc "
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/TextEnty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entidad Federativa"
+                        android:textColor="#46eafc " />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                    <Spinner
+                        android:id="@+id/Enty"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:background="#46eafc "
+                        android:backgroundTint="#46eafc "
+                        android:entries="@array/enty"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/Clacular"
+                style="@style/CampoTexto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#46eafc"
+                android:text="Calcular CURP"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:theme="@style/CampoTexto1" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <ImageView
+                android:id="@+id/imagen2"
+                android:layout_width="200dp"
+                android:layout_height="87dp"
+                android:src="@drawable/android2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.912"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
